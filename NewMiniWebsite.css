@@ -1,0 +1,214 @@
+/*  CSS variables, for those that don't know, a variable stores a value to be reused continously
+ var(--name, value) syntax for variables 
+ global varibles can be used everywhere -declare it inside the :root{} selector 
+ local varible can only be used in the funtion it is declared
+*/ 
+
+body{
+    margin: 0px; 
+
+    font-family: monospace;
+    font-size: 27px;
+}
+
+.Header {
+    display: flex;
+    height:400px; 
+    width: 100%;  
+    position: fixed; /* This allows the header to remain in the same spot as user scrolls */ 
+    top: 0px;
+    left: 0px;
+    z-index: 1000;
+    box-shadow: 2px 2px 15px rgb(58, 57, 57);
+}
+
+.Photogrid {
+    width: 50%; 
+    float: left;
+}
+.BackgroundLogoColor{
+    background-color: white;
+    float: right;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+
+}
+.HeartcodeLogo {
+    width: auto; height: 400px; 
+    transition: transform 0.3s ease ;
+} 
+.HeartcodeLogo:hover {
+ cursor: pointer;
+  transform: translateY(-20px);
+} 
+.GroupPhoto{
+    width: 100%; 
+    height: 100%
+}
+.border{
+    position: absolute;
+    background-color: rgba(184,40,19,255);
+    height: 400px;
+    width: 30px; 
+    margin-left: 50%;
+}
+.Descriptions{
+    display: flex;
+    margin-top: 469px; /* Makes the top margin larger than the header height so that it isn't hidden behind the header */ 
+    justify-content: center;
+    align-items: center;
+    gap: 200px;
+
+}
+
+.Descriptions img { /*  allows you to target objects within another object without */
+    border-radius: 300%;
+    width: 100px;
+    height: 100px;
+    transition: transform 0.3s ease ;
+}
+
+.Descriptions div {
+    width: 400px;
+    height: 400px;
+    background-color: rgba(230,0,0,255) ;
+    padding: 15px;
+    border-radius: 50px;
+    transition: box-shadow 0.15s, opacity 0.8s, transform 0.3s ease; /* allows the box to have a shadow and move up by 10 pixels when user hovers */ 
+} 
+.Descriptions div:hover { 
+    box-shadow: 5px 10px 10px rgb(58, 57, 57);
+    transform: translateY(-20px);
+  
+} 
+.Descriptions img:hover{
+    transform: translateY(-7px);
+    cursor: pointer;
+    
+}
+.Descriptions section{
+    display: flex;
+    gap: 50px;
+   
+} 
+
+.Descriptions p{
+  margin-top: 20px;
+   
+} 
+
+.Video {
+   margin-top: 80px;
+   text-align: center;
+   margin-left: 20px;
+   margin-right: 20px;
+}
+iframe {
+ width: 100%;
+}
+.Research {
+    margin-top: 80px;
+    height: 400px;
+    font-size: 30px;
+    background-color: rgba(230,0,0,255);
+    padding-left: 50px;
+}
+.Research .main {
+    font-size: 45px;
+    font-family: monospace;
+    font-weight: bolder;
+    color: white;
+    
+}
+.Research span {
+    font-size: 65px;
+
+}
+
+.Survey {
+    margin-top: 80px;
+    font-size: 45px;
+    font-family: monospace;
+    font-weight: bolder;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    
+}
+
+.SurveyButton {
+    padding: 10px;
+    background-color: rgba(184,40,19,255);
+    display: block;
+    color: white;
+    border: none;
+    border-radius: 40px;
+    height: 90px;
+    width: 200px;
+    font-size: 45px;
+    margin-left: 50px;
+    position: relative;
+    bottom: -20px;
+    transition: box-shadow 0.15s, opacity 0.8s, transform 0.3s ease; 
+
+}
+.SurveyButton:hover {
+    box-shadow: 5px 10px 10px rgb(58, 57, 57);
+    transform: translateY(-7px);
+    cursor: pointer;
+}
+.Portfolios{
+   text-align: center;
+   font-size: 25px;
+   font-family: monospace;
+   display: flex;
+   margin-top: 80px;
+}
+
+.Portfolios img{
+    width: 200px;
+    height: 200px;
+    border-radius: 190px ;
+    transition: transform 0.3s ease; 
+}
+.Portfolios img:hover{
+    transform: translateY(-7px);
+    cursor: pointer;
+}
+.BacktoTop{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+    
+}
+.BacktoTopBUTTON {
+    padding: 10px;
+    background-color: rgba(184,40,19,255);
+    display: block;
+    color: rgba(11,43,46,255);
+    border: none;
+
+    height: 60px;
+    width: 200px;
+    font-size: 20px;
+    margin-left: 50px;
+    transition: box-shadow 0.15s, opacity 0.8s, transform 0.3s ease; 
+}
+.BacktoTop a {
+   text-decoration: none;
+   color: rgba(11,43,46,255);
+}
+
+
+.BacktoTopBUTTON:hover {
+    transform: translateY(-7px);
+    cursor: pointer;
+    box-shadow: 5px 10px 10px rgb(58, 57, 57);
+    background-color: white;
+    
+}
+
+.BacktoTopBUTTON:active{ /* for when the button or anchor is clicked*/
+    border-style: dotted;
+}
