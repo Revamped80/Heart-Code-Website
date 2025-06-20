@@ -20,8 +20,19 @@ body{
     left: 0px;
     z-index: 1000;
     box-shadow: 2px 2px 15px rgb(58, 57, 57);
+    transition: height 0.3s ease;
 }
 
+#header.shrunk {
+    display: flex;
+    height:80px;
+    width: 100%;
+    position: fixed; 
+    top: 0px;
+    left: 0px;
+    z-index: 1000;
+
+}
 .Photogrid {
     width: 50%; 
     float: left;
