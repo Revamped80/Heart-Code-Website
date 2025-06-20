@@ -8,7 +8,7 @@ body{
     margin: 0px; 
 
     font-family: monospace;
-    font-size: 27px;
+    
 }
 
 .Header {
@@ -58,7 +58,7 @@ body{
     margin-top: 469px; /* Makes the top margin larger than the header height so that it isn't hidden behind the header */ 
     justify-content: center;
     align-items: center;
-    gap: 200px;
+    gap: 150px;
 
 }
 
@@ -70,8 +70,8 @@ body{
 }
 
 .Descriptions div {
-    width: 400px;
-    height: 400px;
+    width: 450px;
+    height: 450px;
     background-color: rgba(230,0,0,255) ;
     padding: 15px;
     border-radius: 50px;
@@ -95,7 +95,7 @@ body{
 
 .Descriptions p{
   margin-top: 20px;
-   
+   font-size: 18px;
 } 
 
 .Video {
