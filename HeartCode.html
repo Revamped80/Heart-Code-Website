@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heart Code Website</title>
+    <link rel="stylesheet" href="NewMiniWebsite.css">
+    
+</head>
+<body> 
+    <div class="Header fade-in"> 
+
+        <div class="BackgroundLogoColor" >
+            <a href="NewMiniWebsite.html"><img src="Awareness (2).png" class="HeartcodeLogo"> </a>  
+        </div>
+        <nav style="display: flex; gap: 40px; align-items: center; margin-left: auto; margin-right: 10%;">
+            <a href="#video" style="text-decoration: none; color: black;">Video</a>
+            <a href="#survey" style="text-decoration: none; color: black;">Survey</a>
+            <a href="#team" style="text-decoration: none; color: black;">Team</a>
+        </nav>
+
+    </div>
+
+    <div class="Descriptions fade-in"> 
+
+        <div class="JReidDes">
+            <section> 
+               <a href="https://www.jreidindeed.com/" target="_blank"><img class="JRILogo" src="InDeed logo_white.png" > </a> 
+                <h1> JReid Indeed </h1>
+            </section>
+            <p> JReid Indeed is a nonprofit founded by NFL player Justin Reid. It empowers youth with tech training, athletic development, and CPR awareness to build stronger, healthier communities.</p>
+        </div>
+        <div class="AHADes">
+            <section> 
+                <a href="https://www.heart.org/en/" target="_blank"><img class="AHALogo" src="AHA_LOGO-RGB_rk_LG.jpg"></a>
+                <h1> American Heart Association</h1>
+            </section>
+            
+            <p> In partnership with AHA, Justin Reid promotes CPR training to boost cardiac arrest survival rates. His mission: equip teens with the skills to save lives during cardiac emergencies.</p>
+        </div>
+
+    </div>
+
+    <div class="Video fade-in" id="video">
+        <!-- Notes:  <video src="video link " type="video/mp4"> </video>  for downloaded video--> 
+        <iframe width="660" height="360" src=" " title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> <!-- to showcase a youtubve video https:www.youtube.com/embed/VIDEO_ID, can copy from youtube itself-->
+    </div>
+
+    <div class="Research fade-in"> 
+        <h1 class="fade-in" style="font-size: 37px; color: white;"> Empowering High Schoolers to Save Lives Through CPR Education.</h1>
+        <p class="fade-in" style="font-size: 24px; "> Our mission is to equip high school students with Hands-Only CPR skills, transforming them from bystanders to active lifesavers. </p>
+        <p class="fade-in" style="font-size: 24px; "> We believe every teen should have the confidence and ablity to act in emergencies. </p>
+
+        <a href="research.html" target="_blank" class="fade-in"> Our Research </a>
+    </div>
+
+ 
+       <div class="Survey fade-in" id="survey">
+            <div style="text-align: center;">
+                <p style="color: rgba(184,40,19,255); font-size: 30px;">Take our survey!</p>
+                 <div style="animation: bounce 1s infinite;">
+                    <span style="font-size: 50px; color: rgba(184,40,19,255);">&#8595;</span>
+                </div>
+            </div>
+        </div>
+        <button class="SurveyButton"> Survey </button> 
+    <h1 style=" text-align: center; font-size: 70px; margin-top: 60px;"> Heart Code Team</h1>
+
+    <div class="photoShuffle fade-in"> 
+       <img  class="photo1" src="photoShuffle/IMG_5145.JPG">
+        <img  class="photo2" src="photoShuffle/IMG_5224.JPG">
+        <img  class="photo3" src="photoShuffle/PXL_20250604_144304326.jpg">
+        <img  class="photo4" src="photoShuffle/PXL_20250611_171306011.jpg">
+        <img class="photo5" src="photoShuffle/PXL_20250611_171310742.jpg">
+        <img src="Awareness (2).png" class="HeartcodeLogo2"> 
+    </div>
+
+    <div class="Portfolios fade-in" id="team"> 
+         <div class="Mmachi">
+            <a href="https://revamped80.github.io/Mmachi-Portfolio/" target="_blank"> <img src="Group Headshot/Bulk Portraits - Regnier Summer Camp_PTO56585_315.jpg"  class="NameHeadshot" ></a>
+            <p> Mmachi Ikwuwunna</p>
+
+        </div>
+        <div class="Markeiaja">
+            <a href="" target="_blank"><img src="Group Headshot/Bulk Portraits - Regnier Summer Camp_PTO56572_302.jpg"  class="NameHeadshot"></a>
+            <p> Markeiaja Wilson</p>
+        </div>
+        <div class="Fernando">
+           <a href="" target="_blank"><img  src="Group Headshot/Bulk Portraits - Regnier Summer Camp_PTO56606_336.jpg" class="NameHeadshot"></a>
+            <p> Fernando Juarez</p>
+        </div>
+        <div class="Josh">
+           <a href="" target="_blank"><img src="Group Headshot/Bulk Portraits - Regnier Summer Camp_PTO56620_350.jpg" class="NameHeadshot" > </a>
+            <p> Josh Okuagu</p>
+        </div>
+
+    </div>
+    
+    <div class="BacktoTop fade-in">
+        <button class="BacktoTopBUTTON" > &#8593;  <a href=#top> 	Back to the top </a></button>
+
+    </div>
+
+
+    <script>  
+
+        document.addEventListener("DOMContentLoaded", function () { /* This allows for html objects to fade in as user scrolls */ 
+            const faders = document.querySelectorAll(".fade-in");
+
+            const appearOptions = {
+                threshold: 0.1, // Trigger when 10% of the element is visible
+                rootMargin: "0px 0px -50px 0px"
+            };
+
+            const appearOnScroll = new IntersectionObserver(function (
+                entries,
+                observer
+            ) {
+                entries.forEach(entry => {
+                    if (!entry.isIntersecting) {
+                        return;
+                    } else {
+                        entry.target.classList.add("visible");
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, appearOptions);
+
+            faders.forEach(fader => {
+                appearOnScroll.observe(fader);
+            });
+        });
+
+        window.addEventListener("DOMContentLoaded", () => {
+            const container = document.querySelector(".photoShuffle");
+            const photos = Array.from(container.children);
+            
+            // Hide all photos initially
+            photos.forEach(photo => {
+                photo.style.display = 'none';
+                photo.style.opacity = '0';
+                photo.style.transition = 'opacity 1s ease';
+            });
+
+
+            // Show first photo
+            let currentIndex = 0;
+            if (photos.length > 0) {
+                photos[currentIndex].style.display = 'block';
+                setTimeout(() => {
+                    photos[currentIndex].style.opacity = '1';
+                }, 100);
+            }
+
+
+            // Set up automatic cycling
+            const cycleTime = 3000; // 3 seconds between photos
+            const fadeTime = 800; // 1 second fade duration
+
+
+            function cyclePhotos() {
+                // Fade out current photo
+                photos[currentIndex].style.opacity = '0';
+                
+                setTimeout(() => {
+                    // Hide current photo completely after fade out
+                    photos[currentIndex].style.display = 'none';
+                    
+                    // Move to next photo (loop back to 0 if at end)
+                    currentIndex = (currentIndex + 1) % photos.length;
+                    
+                    // Show and fade in next photo
+                    photos[currentIndex].style.display = 'block';
+                    setTimeout(() => {
+                        photos[currentIndex].style.opacity = '1';
+                    }, 100);
+                    
+                    // Schedule next cycle
+                    setTimeout(cyclePhotos, cycleTime);
+                }, fadeTime);
+            }
+
+
+            // Start the cycling after initial display
+            if (photos.length > 1) {
+                setTimeout(cyclePhotos, cycleTime);
+            }
+
+
+            // Keep the existing random shuffle functionality
+            photos.sort(() => 0.5 - Math.random()); 
+            photos.forEach(photo => container.appendChild(photo)); 
+        });
+
+
+        // Keep the existing fade-in observer code
+        document.addEventListener("DOMContentLoaded", function () { 
+            const faders = document.querySelectorAll(".fade-in");
+
+
+            const appearOptions = {
+                threshold: 0.1, 
+                rootMargin: "0px 0px -50px 0px"
+            };
+
+
+            const appearOnScroll = new IntersectionObserver(function (
+                entries,
+                observer
+            ) {
+                entries.forEach(entry => {
+                    if (!entry.isIntersecting) {
+                        return;
+                    } else {
+                        entry.target.classList.add("visible");
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, appearOptions);
+
+
+            faders.forEach(fader => {
+                appearOnScroll.observe(fader);
+            });
+        });
+    </script>
+
+
+
+
+</body>
+</html>
