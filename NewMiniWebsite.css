@@ -70,8 +70,8 @@ body{
 }
 
 .Descriptions div {
-    width: 400px;
-    height: 400px;
+    width: 450px;
+    height: 455px;
     background-color: rgba(230,0,0,255) ;
     padding: 15px;
     border-radius: 50px;
@@ -95,6 +95,7 @@ body{
 
 .Descriptions p{
   margin-top: 20px;
+  font-size: 19px;
    
 } 
 
