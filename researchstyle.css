@@ -1,0 +1,79 @@
+ body{
+    margin: 0px; 
+
+    font-family: monospace;
+    font-size: 27px;
+}
+
+.Header {
+    background-color: white;
+    display: flex;
+    height:140px; 
+    width: 100%;  
+    position: fixed; /* This allows the header to remain in the same spot as user scrolls */ 
+    top: 0px;
+    left: 0px;
+    z-index: 1000;
+    box-shadow: 2px 2px 15px rgb(58, 57, 57);
+}
+ 
+.HeartcodeLogo {
+    margin-left: 40px;
+
+    width: auto; height: 149px; 
+    transition: transform 0.3s ease ;
+} 
+.HeartcodeLogo:hover {
+ cursor: pointer;
+  transform: translateY(-20px);
+} 
+ .research-container {
+      font-family: 'Arial', sans-serif;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+      margin-top: 160px;
+    }
+    .research-card {
+      background: #f8f9fa;
+      border-radius: 10px;
+      padding: 20px;
+      margin-bottom: 30px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+    .source-title {
+      color: #2c3e50;
+      border-bottom: 2px solid #3498db;
+      padding-bottom: 10px;
+    }
+    .source-titled{
+        border-bottom: 2px solid #3498db;
+      padding-bottom: 10px;
+    }
+    .impact-section {
+      margin: 15px 50px;
+    }
+    h4 {
+      color: #2980b9;
+      margin-bottom: 10px;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    li {
+      margin-bottom: 8px;
+      line-height: 1.5;
+    }
+    .stat {
+      font-weight: bold;
+      color: #e74c3c;
+    }
+    .highlight {
+      background-color: #fffacd;
+      padding: 2px 5px;
+      border-radius: 3px;
+    }
+
+    .howCPR li{
+        list-style: decimal;
+    }
