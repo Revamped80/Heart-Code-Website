@@ -126,10 +126,15 @@ body{
    text-align: center;
    margin-left: 20px;
    margin-right: 20px;
-   background-color: black;
+  
+   
+
 }
-iframe {
- width: 100%;
+video {
+   width: 660px;
+   height: 360px;
+    background-color: rgba(184,40,19,255);
+
 }
 .Research {
     margin-top: 80px;
